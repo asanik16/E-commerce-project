@@ -12,7 +12,7 @@ import {MatTable, MatTableDataSource} from '@angular/material/table';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  displayedColumns: string[] = ['productName', 'productCode', 'category', 'price', 'description'];
+  displayedColumns: string[] = ['productName', 'productCode', 'category', 'price', 'description', 'action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -24,7 +24,11 @@ export class ListComponent implements OnInit {
   openDialog() {
     this.dialog.open(CreateComponent, {
       width:'30%'
-    });
+    }).afterClosed().subscribe(val=>{
+      if(val === 'save'){
+        this.getAllProducts();
+      }
+    })
   }
 
   getAllProducts() {
@@ -39,6 +43,30 @@ export class ListComponent implements OnInit {
       }
     })
   }
+
+  editProduct(row : any) {
+    this.dialog.open(CreateComponent, {
+      width: '30%',
+      data: row
+    }).afterClosed().subscribe(val=>{
+      if(val === 'update') {
+        this.getAllProducts();
+      }
+    })
+  }
+
+  deleteProduct(id : any) {
+    this.api.deleteProduct(id).subscribe({
+      next:(res)=>{
+        alert("Product deleted successfuly")
+        this.getAllProducts();
+      },
+      error:(err)=>{
+        alert("Error while deleting the product");
+      }
+    })
+  }
+
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();

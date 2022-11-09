@@ -23,6 +23,14 @@
       "price": 120000,
       "description": "great portable laptop",
       "id": 3
+    },
+    {
+      "productName": "Sony a7 iii",
+      "productCode": "snya7",
+      "category": "Camera",
+      "price": 170000,
+      "description": "top of the line mirrorless camera",
+      "id": 5
     }
   ],
   "comments": [
