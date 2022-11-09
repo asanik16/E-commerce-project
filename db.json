@@ -1,0 +1,38 @@
+{
+  "productList": [
+    {
+      "productName": "iphone 13",
+      "productCode": "ie13",
+      "category": "Samrtphone",
+      "price": 100000,
+      "description": "great phone",
+      "id": 1
+    },
+    {
+      "productName": "samsung galaxy s22",
+      "productCode": "sgs22",
+      "category": "Samrtphone",
+      "price": 64000,
+      "description": "compact phone",
+      "id": 2
+    },
+    {
+      "productName": "Asus Zenbook 14",
+      "productCode": "az14",
+      "category": "Laptop",
+      "price": 120000,
+      "description": "great portable laptop",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
