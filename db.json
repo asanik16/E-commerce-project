@@ -1,10 +1,10 @@
 {
   "productList": [
     {
-      "productName": "iphone 13",
-      "productCode": "ie13",
+      "productName": "iphone 14 pro",
+      "productCode": "ie14p",
       "category": "Samrtphone",
-      "price": 100000,
+      "price": 150000,
       "description": "great phone",
       "id": 1
     },
