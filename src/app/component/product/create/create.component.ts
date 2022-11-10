@@ -24,6 +24,7 @@ export class CreateComponent implements OnInit {
       category : ['',Validators.required],
       price : ['',Validators.required],
       description : ['',Validators.required],
+      imageURL : ['',Validators.required],
     })
 
     if(this.editData) {
@@ -33,6 +34,7 @@ export class CreateComponent implements OnInit {
       this.productForm.controls['category'].setValue(this.editData.category);
       this.productForm.controls['price'].setValue(this.editData.price);
       this.productForm.controls['description'].setValue(this.editData.description);
+      this.productForm.controls['imageURL'].setValue(this.editData.imageURL);
     }
   }
 

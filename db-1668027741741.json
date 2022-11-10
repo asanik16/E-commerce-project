@@ -6,7 +6,6 @@
       "category": "Samrtphone",
       "price": 150000,
       "description": "great phone",
-      "imageURL": "https://www.gsmarena.com.bd/images/products/Apple-iPhone-14-Pro-Max-Space-Black.jpg",
       "id": 1
     },
     {
@@ -15,7 +14,6 @@
       "category": "Samrtphone",
       "price": 64000,
       "description": "compact phone",
-      "imageURL": "https://www.gsmarena.com.bd/images/products/Samsung-Galaxy-S22-5G.jpg",
       "id": 2
     },
     {
@@ -24,7 +22,6 @@
       "category": "Laptop",
       "price": 120000,
       "description": "great portable laptop",
-      "imageURL": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/ux425ea/ux425ea-01-500x500.jpg",
       "id": 3
     },
     {
@@ -33,17 +30,7 @@
       "category": "Camera",
       "price": 170000,
       "description": "top of the line mirrorless camera",
-      "imageURL": "https://www.cameralabs.com/wp-content/uploads/2018/02/sony-a7-iii-header1-1920x1136.jpg",
       "id": 5
-    },
-    {
-      "productName": "Realme 3 pro",
-      "productCode": "rm3p",
-      "category": "Samrtphone",
-      "price": 20000,
-      "description": "midrange phone",
-      "imageURL": "https://www.smartphonesbd.com/images/phones/realme-3-pro.jpg",
-      "id": 6
     }
   ],
   "comments": [

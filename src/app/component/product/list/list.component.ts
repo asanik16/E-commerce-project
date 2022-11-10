@@ -12,7 +12,7 @@ import {MatTable, MatTableDataSource} from '@angular/material/table';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  displayedColumns: string[] = ['productName', 'productCode', 'category', 'price', 'description', 'action'];
+  displayedColumns: string[] = ['productName', 'productCode', 'category', 'price', 'description', 'imageURL', 'action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
