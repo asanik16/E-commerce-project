@@ -58,7 +58,7 @@ export class CreateComponent implements OnInit {
     }
   }
   updateProduct() {
-    this.api.putProduct(this.productForm.value, this.editData.id).subscribe({
+    this.api.putProduct(this.productForm.value, this.editData._id).subscribe({
       next:(res) => {
         alert("Product updated successfully");
         this.productForm.reset();

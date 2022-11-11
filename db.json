@@ -44,6 +44,15 @@
       "description": "midrange phone",
       "imageURL": "https://www.smartphonesbd.com/images/phones/realme-3-pro.jpg",
       "id": 6
+    },
+    {
+      "productName": "idd",
+      "productCode": "ip",
+      "category": "Samrtphone",
+      "price": 10,
+      "description": "great phone",
+      "imageURL": "https://www.gsmarena.com.bd/images/products/Apple-iPhone-14-Pro-Max-Space-Black.jpg",
+      "id": 7
     }
   ],
   "comments": [

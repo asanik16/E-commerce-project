@@ -11,18 +11,18 @@ export class ApiService {
   constructor(private http : HttpClient) { }
 
   postProduct(data : any) {
-    return this.http.post<any>("http://localhost:3010/add/",data);
+    return this.http.post<any>("https://anik-s-cart.herokuapp.com/create-product/",data);
   }
   getProduct() {
-    return this.http.get<any>("http://localhost:3010/api/")
+    return this.http.get<any>("https://anik-s-cart.herokuapp.com/get-product/")
     .pipe(map((res:any)=>{
       return res;
     }))
   }
   putProduct(data : any, id : number) {
-    return this.http.put<any>("http://localhost:3000/productList/"+id, data)
+    return this.http.put<any>("https://anik-s-cart.herokuapp.com/edit-product/"+id, data)
   }
   deleteProduct(id : number) {
-    return this.http.delete<any>("http://localhost:3000/productList/"+id)
+    return this.http.delete<any>("https://anik-s-cart.herokuapp.com/delete-product/"+id)
   }
 }
