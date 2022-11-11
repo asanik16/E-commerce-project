@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from './service/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,15 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'e-commerce-project';
-  constructor(private router : Router){ }
+  constructor(private router : Router, private cartService : CartService ){ }
+  public totalItem : number = 0;
+  ngOnInit(): void {
+    this.cartService.getProductsCart().subscribe(res => {
+      this.totalItem = res.length;
+    })
+  }
+ 
+
   gotoDashboard() {
     this.router.navigateByUrl('/dashboard')
   }

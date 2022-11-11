@@ -23,6 +23,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatPaginatorModule,
     MatSortModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatBadgeModule
 
   ],
   providers: [],

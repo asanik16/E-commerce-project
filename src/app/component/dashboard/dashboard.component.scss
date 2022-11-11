@@ -1,13 +1,20 @@
 .example-card {
+  // height:200px;
+  // width: 200px;
+  // max-width: 200px;
+  padding: 20px;
+  margin: 5f0px;
+}
+.example-card img {
   height:200px;
   width: 200px;
-  // max-width: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
 }
-
-// .example-header-image {
-//   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-//   background-size: cover;
-// }
+.example-card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
 .container {
   display:flex;
   justify-content: center;
